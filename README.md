@@ -1,5 +1,5 @@
 # README
-Calculadora de año bisiesto desarrollado en ensamblado x86/64 con interfaz gráfica en gtk3 en C
+Calculadora de año bisiesto desarrollado en ensamblador x86/64 con interfaz gráfica en gtk3 en C
 
 ## Sobre el proyecto
 Tarea 2 <br />
@@ -33,7 +33,5 @@ make clean
 ```
 
 ## Uso
-1. Al ejecutar el programa aparecerá el menú principal de la calculadora. Desde aquí se podrá ingresar a las diferentes operaciones que se pueden realizar. También se puede salir del programa y terminar la ejecución.
-<br/><br/> 
 
 
