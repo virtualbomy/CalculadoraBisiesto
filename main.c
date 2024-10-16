@@ -1,6 +1,8 @@
 #include <gtk/gtk.h>
 #include <stdlib.h>
 
+extern long calcularBisiesto(long numero);  //Declara la función de ensamblador
+
 // Función para mostrar un popup con el resultado del cálculo según el valor de 'result'
 void resultadoFinal(int result, GtkBuilder *builder) {
     GtkWidget *popupWindow;
@@ -35,8 +37,12 @@ void numeroIngresado(GtkButton *button, gpointer user_data) {
     if (*fin != '\0' || entrada < 1581) {
        g_print("Digite un año mayor o igual a 1582.\n");
     } else {
+        //Se guarda la entrada del usuario en la variable número después de ser validada
 		numero = entrada;
-        //g_print("Número ingresado: %ld\n", numero);
+
+        //Se llama la funcion de ensamblador
+        //result = calcularBisiesto(numero);
+
         // Llamar a la función para mostrar la ventana adecuada
 		resultadoFinal(result, builder);
     }
