@@ -1,24 +1,22 @@
-CC = gcc
-CFLAGS = `pkg-config --cflags gtk+-3.0`
-LIBS = `pkg-config --libs gtk+-3.0`
-TARGET = app
-SRC = main.c
-ASM_SRC = bisiesto.asm
-GLADE_FILE = Menu.glade
+CC=gcc
+NASM=nasm
+CFLAGS=`pkg-config --cflags --libs gtk+-3.0`
+ASMFLAGS=-f elf64
 
-.PHONY: all clean run
+all: app
 
-all: $(TARGET)
+app: main.o bisiesto.o
+	$(CC) -o $@ $^ $(CFLAGS)
 
-$(TARGET): $(SRC) $(ASM_SRC)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC) $(ASM_OBJ) $(LIBS)
+main.o: main.c
+	$(CC) -c $< $(CFLAGS)
 
-$(ASM_OBJ): $(ASM_SRC)
-	nasm -f elf64 $(ASM_SRC) -o bisiesto.o
+bisiesto.o: bisiesto.asm
+	$(NASM) $(ASMFLAGS) $< -o $@
 
-run: $(TARGET)
-	./$(TARGET)
+run: app
+	./app
 
 clean:
-	rm -f $(TARGET) bisiesto.o
+	rm -f *.o app
 

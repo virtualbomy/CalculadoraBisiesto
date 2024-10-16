@@ -40,8 +40,8 @@ void numeroIngresado(GtkButton *button, gpointer user_data) {
         //Se guarda la entrada del usuario en la variable número después de ser validada
 		numero = entrada;
 
-        //Se llama la funcion de ensamblador
-        //result = calcularBisiesto(numero);
+        //Llamar a la función de ensamblador
+        result = calcularBisiesto(numero);
 
         // Llamar a la función para mostrar la ventana adecuada
 		resultadoFinal(result, builder);

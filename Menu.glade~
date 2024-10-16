@@ -1194,7 +1194,7 @@
           <object class="GtkLabel" id="popup1label1">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">El número es Bisiesto!</property>
+            <property name="label" translatable="yes">El año es Bisiesto!</property>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -1295,6 +1295,7 @@
   </object>
   <object class="GtkWindow" id="ventana3">
     <property name="can-focus">False</property>
+    <property name="type">popup</property>
     <property name="resizable">False</property>
     <property name="window-position">center</property>
     <property name="default-width">250</property>
@@ -1308,7 +1309,7 @@
           <object class="GtkLabel" id="popup2label">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">El número no es Bisiesto!</property>
+            <property name="label" translatable="yes">El año no es Bisiesto!</property>
           </object>
           <packing>
             <property name="left-attach">1</property>

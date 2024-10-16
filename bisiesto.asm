@@ -1,13 +1,14 @@
-section .data
-    numero1 dq 0  ;Reserva espacio para un número (El ingresado por el usuario en C)
-
 section .text
-    global calcularBisiesto
+global calcularBisiesto
 
 calcularBisiesto:
-    ;Guarda el número recibido en C en RDI
-    mov [numero1], rdi
+    mov rax, rdi      ; Mover el año (número) a RAX
 
-    ;Valor de result. Solo puede seer 0 (Bisiesto) o 1 (No bisiesto)
-    mov rax, 1  ;Devuelve 1 en RAX
+.bisiesto:
+    mov rax, 0        ; Retornar 0 si es bisiesto
     ret
+
+.no_bisiesto:
+    mov rax, 1        ; Retornar 1 si no es bisiesto
+    ret
+
