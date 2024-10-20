@@ -5,6 +5,7 @@ Calculadora de año bisiesto desarrollado en ensamblador x86/64 con interfaz gr�
 Tarea 2 <br />
 En este programa se desarrolló una calculadora de añó bisiesto utilizando el ensamblador `NASM` de la arquitectura x86-64. También se implementó una interfaz gráfica en gtk3 con C <br />
 A continuación se encuentra el diagrama de flujo que representa la ejecución del programa
+
 ![image info](./img/calculadorabisiesto.drawio.png)
 <br />
 
