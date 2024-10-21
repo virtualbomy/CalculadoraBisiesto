@@ -35,7 +35,7 @@ make clean
 ```
 
 ## Uso
-1. Necesita instalar GTK3, para que el programa funcione de manera correcta.
-2.Al ejecutar el programa utilizando el comando "make run", aparecerá en pantalla un cuadro que le pedirá que ingrese en el área asignada el año que desea calcular y presione el botón de "Calcular". Después aparecerá en pantalla un mensaje diciendo si el año ingresado ES o NO bisiesto
+1. Necesita instalar GTK3, para que el programa funcione de manera correcta. <br />
+2.Al ejecutar el programa utilizando el comando "make run", aparecerá en pantalla un cuadro que le pedirá que ingrese en el área asignada el año que desea calcular y presione el botón de "Calcular". Después aparecerá en pantalla un mensaje diciendo si el año ingresado ES o NO bisiesto<br />
 ![image](https://github.com/user-attachments/assets/8af2c719-aac0-470d-8c5a-cad8cc893928)
 ![image](https://github.com/user-attachments/assets/d00dbba9-e2f0-42eb-95f7-394f5903dac1)
